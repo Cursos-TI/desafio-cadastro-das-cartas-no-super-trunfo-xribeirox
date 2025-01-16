@@ -1,37 +1,40 @@
 #include <stdio.h>
 
-int main() {
-    char nome[50];
-    int populacao;
-    float area;
-    float pib;
-    int pontosturisticos;
+int main(){
 
-    printf("Cadastre sua Cidade com as Informações solicitadas abaixo.\n")
+  // INSERÇAO DAS VARIAVEIS;
+  char nome[50];
+  int populacao;
+  int pontosturisticos;
+  float area;
+  float pib;
+  
+  //RECOLHIMENTO DE DADOS COM SCANF;
+  printf("Qual o Nome da sua cidade?\n");
+  scanf("%s", &nome);
 
-    printf("Qual o nome da sua Cidade?\n");
-    scanf("%s", &nome);
+  printf("Qual a População da cidade?\n");
+  scanf("%d", &populacao);
 
-    printf("Qual a População de sua Cidade?\n");
-    scanf("%d", &populacao);
-    
-    printf("Qual a Área em KM² de sua Cidade?\n");
-    scanf("%f", &area);
+  printf("Qual a Area em KM da cidade?\n");
+  scanf("%f", &area);
 
-    printf("Qual o PIB em R$ de sua Cidade?\n");
-    scanf("%f", &pib);
+  printf("Qual o PIB da cidade?\n");
+  scanf("%f", &pib);
 
-    printf("Quantos Pontos Turísticos sua Cidade possui?\n");
-    scanf("%f", &pontosturisticos);
+  printf("Quantos pontos turisticos?\n");
+  scanf("%d", &pontosturisticos);
 
-    printf("Você cadastrou a cidade: %s, Confira o cadastro abaixo!\n", nome);
-    printf("Cidade Nome: %s\n", nome);
-    printf("População: %d\n", populacao);
-    printf("Area KM²: %f\n", area);
-    printf("PIB: %f\n", pib);
-    printf("Número de Pontos Túristicos: %d\n", pontosturisticos);
+  //CONFIRMAÇAO DE DADOS OBTIDOS;
+  printf("\nCidade cadastrada com sucesso.\n");
 
-    printf("\nCidade Cadastrada com Sucesso!\n");
-    
-    return 0;
-}
+  //VISUALIZAÇAO DOS DADOS OBTIDOS;
+  printf("\nNome: %s\n", nome);
+  printf("População: %d\n", populacao);
+  printf("Área em KM: %.2f\n", area);
+  printf("PIB: R$%.2f\n", pib);
+  printf("Pontos Turísticos: %d\n", pontosturisticos);
+
+  return 0;
+
+  }

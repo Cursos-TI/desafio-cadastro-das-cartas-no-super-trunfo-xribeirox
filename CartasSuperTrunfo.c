@@ -9,7 +9,7 @@ int main() {
 
     printf("Cadastre sua Cidade com as Informações solicitadas abaixo.\n")
 
-    printf("Qual o nome da sua Cidade?\n")
+    printf("Qual o nome da sua Cidade?\n");
     scanf("%s", &nome);
 
     printf("Qual a População de sua Cidade?\n");

@@ -35,6 +35,17 @@ int main(){
   printf("PIB: R$%.2f\n", pib);
   printf("Pontos Turísticos: %d\n", pontosturisticos);
 
+  float densidadepopulacao = populacao / area;
+  float pibpercapita = pib / populacao;
+
+  printf("\nDados Extras de %s\n", nome);
+
+  printf("\nDensidade Populacional: %f\n", densidadepopulacao);
+  printf("PIB Per Capita: R$%f\n", pibpercapita);
+
+ 
+
+
   return 0;
 
   }

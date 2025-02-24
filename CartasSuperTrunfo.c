@@ -2,8 +2,8 @@
 
 int main() {
     // VARIAVEIS CIDADES
-    char estado1[50], estado2[50];
-    char codigo1[50], codigo2[50];
+    char estado1[2], estado2[2];
+    char codigo1[3], codigo2[3];
     char cidade1[50], cidade2[50];
     int populacao1, populacao2;
     int pontosturisticos1, pontosturisticos2;

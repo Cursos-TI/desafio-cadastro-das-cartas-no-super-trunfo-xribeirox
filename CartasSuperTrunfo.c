@@ -71,8 +71,10 @@ int main() {
     printf("Nome da Cidade: %s\n", cidade1);
     printf("Populacao: %d\n", populacao1);
     printf("Área em Km2: %f\n", area1);
-    printf("PIB: %f\n", pib1);
+    printf("PIB: RS%.2f\n", pib1);
     printf("Pontos Turisticos: %d\n", pontosturisticos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacao1);
+    printf("PIB Per Capita: RS%.2f\n", pibpercapita1);
 
     //EXIBICAO DOS DADOS CIDADE2
     printf("\nCidade 2 Cadastrada com sucesso\n");
@@ -81,40 +83,11 @@ int main() {
     printf("Nome da Cidade: %s\n", cidade2);
     printf("Populacao: %d\n", populacao2);
     printf("Área em Km2: %f\n", area2);
-    printf("PIB: %f\n", pib2);
+    printf("PIB: RS%.2f\n", pib2);
     printf("Pontos Turisticos: %d\n", pontosturisticos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacao2);
+    printf("PIB Per Capita: RS%.2f\n", pibpercapita2);
 
-    // COMPARAÇAO DENSIDADE ONDE MENOIR VENCE
-    printf("\nDensidade Populacional: ");
-    if (densidadepopulacao1 < densidadepopulacao2) {
-    printf("Cidade %s venceu! Densidade Populacional = %.2f\n", cidade1, densidadepopulacao1);
-    } else {
-    printf("Cidade %s venceu! Densidade Populacional = %.2f\n", cidade2, densidadepopulacao2);
-    }
-
-    // COMPARA PIB - MAIOR VENCE
-    printf("PIB: ");
-    if (pib1 > pib2) {
-    printf("Cidade %s venceu! PIB = R$%.2f\n", cidade1, pib1);
-    } else {
-    printf("Cidade %s venceu! PIB = R$%.2f\n", cidade2, pib2);
-    }
-
-    // COMPARA PONTOS - MAIS VENCE
-    printf("Pontos Turísticos: ");
-    if (pontosturisticos1 > pontosturisticos2) {
-    printf("Cidade %s venceu! Pontos Turísticos = %d\n", cidade1, pontosturisticos1);
-    } else {
-    printf("Cidade %s venceu! Pontos Turísticos = %d\n", cidade2, pontosturisticos2);
-    }
-
-    // PIB - MAIOR VENCE
-    printf("PIB per Capita: ");
-    if (pibpercapita1 > pibpercapita2) {
-    printf("Cidade %s venceu! PIB per Capita = R$%.2f\n", cidade1, pibpercapita1);
-    } else {
-    printf("Cidade %s venceu! PIB per Capita = R$%.2f\n", cidade2, pibpercapita2);
-    }
 
     return 0;
 }

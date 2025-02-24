@@ -64,6 +64,26 @@ int main() {
     densidadepopulacao2 = populacao2 / area2;
     pibpercapita2 = pib2 / populacao2;
 
+    //EXIBIÇAO DOS DADOS CIDADE1
+    printf("\nCidade 1 Cadastrada com sucesso\n");
+    printf("Estado: %s\n", estado1);
+    printf("Codigo: %s\n", codigo1);
+    printf("Nome da Cidade: %s\n", cidade1);
+    printf("Populacao: %d\n", populacao1);
+    printf("Área em Km2: %f\n", area1);
+    printf("PIB: %f\n", pib1);
+    printf("Pontos Turisticos: %d\n", pontosturisticos1);
+
+    //EXIBICAO DOS DADOS CIDADE2
+    printf("\nCidade 2 Cadastrada com sucesso\n");
+    printf("Estado: %s\n", estado2);
+    printf("Codigo: %s\n", codigo2);
+    printf("Nome da Cidade: %s\n", cidade2);
+    printf("Populacao: %d\n", populacao2);
+    printf("Área em Km2: %f\n", area2);
+    printf("PIB: %f\n", pib2);
+    printf("Pontos Turisticos: %d\n", pontosturisticos2);
+
     // COMPARAÇAO DENSIDADE ONDE MENOIR VENCE
     printf("\nDensidade Populacional: ");
     if (densidadepopulacao1 < densidadepopulacao2) {
